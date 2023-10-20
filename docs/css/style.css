@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 0.9375rem;
+  font-weight: 400; }
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: "Josefin Sans";
+  font-weight: 300; }
+
+p, a {
+  font-family: "Alata";
+  line-height: 1.6; }
+
+a {
+  text-decoration: none; }
+
+button {
+  font-family: "Josefin Sans";
+  background: none; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+main {
+  text-align: center; }
+  @media (min-width: 1100px) {
+    main {
+      text-align: left; } }
+
+figcaption {
+  font-family: "Josefin Sans";
+  font-weight: 300; }
+
+.container {
+  padding: 0 1.5em;
+  max-width: 700px;
+  margin: 0 auto; }
+  @media (min-width: 1100px) {
+    .container {
+      width: 85%;
+      max-width: 1440px; } }
+
+.logo {
+  width: 150px; }
+  @media (min-width: 1100px) {
+    .logo {
+      width: auto; } }
+
+.line {
+  border-bottom: 2px solid white;
+  padding: .3em 0;
+  transition: .5s; }
+
+.desktop_img {
+  display: none; }
+  @media (min-width: 1100px) {
+    .desktop_img {
+      display: block; } }
+
+@media (min-width: 1100px) {
+  .mobile_img {
+    display: none; } }
+
+.icons {
+  font-size: 2rem; }
+
+.heading_h2 {
+  font-size: 2rem; }
+  @media (min-width: 1100px) {
+    .heading_h2 {
+      font-size: 3rem; } }
+
+.white_color {
+  color: white; }
+
+.black_color {
+  color: black; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.very_dark_gray {
+  color: dimgray; }
+
+.dark_gray {
+  color: #8c8c8c; }
+
+.dark_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .2; }
+
+.nav_link:hover {
+  border-bottom: 2px solid white; }
+
+.attribution {
+  color: white;
+  font-size: 0.6875rem; }
+
+header {
+  background: url("../images/mobile/image-hero.jpg") center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  /* End of navbar */ }
+  header .container {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: 1fr;
+    padding-top: 2em;
+    height: 100%; }
+  header #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* End of nav_list */ }
+    header #navbar .logo {
+      z-index: 2; }
+    header #navbar .nav_list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      padding-top: 10em;
+      background: black;
+      transition: .5s;
+      z-index: 1; }
+      header #navbar .nav_list .list_item {
+        max-width: 700px;
+        margin: 0 auto; }
+        header #navbar .nav_list .list_item .nav_link {
+          font: 300 1.5rem "Josefin Sans";
+          display: block;
+          text-transform: uppercase;
+          margin: 0 0 2rem 1.5rem; }
+      @media (min-width: 1100px) {
+        header #navbar .nav_list {
+          position: relative;
+          width: auto;
+          background: none;
+          padding-top: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          header #navbar .nav_list .list_item .nav_link {
+            font: 400 0.9375rem "Alata";
+            display: block;
+            text-transform: capitalize;
+            margin: 0; }
+          header #navbar .nav_list .list_item + .list_item {
+            margin-left: 2rem; } }
+    header #navbar .nav_icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      header #navbar .nav_icons .toggle_btn {
+        position: absolute;
+        right: 0;
+        z-index: 2; }
+      header #navbar .nav_icons .menu_close {
+        display: none; }
+      @media (min-width: 1100px) {
+        header #navbar .nav_icons {
+          display: none; } }
+  header .header_content {
+    border: 2px solid white;
+    padding: 1.5em;
+    width: 100%; }
+    header .header_content .heading_h1 {
+      font-size: 2.5rem;
+      opacity: 1; }
+  @media (min-width: 1100px) {
+    header {
+      background: url("../images/desktop/image-hero.jpg") center/cover no-repeat;
+      height: 85vh; }
+      header .container {
+        padding-top: 4em; }
+      header .header_content {
+        max-width: 60%; }
+        header .header_content .heading_h1 {
+          font-size: 5rem; } }
+
+/* End of header */
+main {
+  /* End of section_creations */ }
+  main section {
+    margin-top: 6rem; }
+    @media (min-width: 1100px) {
+      main section {
+        margin-top: 12rem; } }
+  main .section_interactive .heading_h2 {
+    margin: 2.5rem 0 1rem; }
+  @media (min-width: 1100px) {
+    main .section_interactive .Interactive_content {
+      background: white;
+      align-self: end;
+      padding: 4em 0 0 7em;
+      margin-left: -140px; }
+    main .section_interactive img {
+      width: 100%; } }
+  main .section_creations {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr; }
+    main .section_creations .heading_h2 {
+      margin-bottom: 3rem; }
+      @media (min-width: 1100px) {
+        main .section_creations .heading_h2 {
+          margin: 0; } }
+    main .section_creations .btn {
+      order: 1;
+      justify-self: center;
+      margin: 2rem 0;
+      padding: 1em 3em;
+      letter-spacing: 5px;
+      border: 2px solid #8c8c8c; }
+      @media (min-width: 1100px) {
+        main .section_creations .btn {
+          order: 0;
+          margin: 0;
+          justify-self: flex-end; } }
+    main .section_creations .figure_creations {
+      position: relative;
+      margin-top: 1.5rem; }
+      main .section_creations .figure_creations figcaption {
+        position: absolute;
+        top: 0;
+        font-size: 1.7rem;
+        text-align: left;
+        margin: 50px 0 10px 20px; }
+        @media (min-width: 1100px) {
+          main .section_creations .figure_creations figcaption {
+            margin-top: 400px; } }
+      main .section_creations .figure_creations .light_overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+        transition: .5s;
+        opacity: 0;
+        cursor: pointer; }
+      main .section_creations .figure_creations:hover .light_overlay {
+        opacity: .5; }
+      main .section_creations .figure_creations:hover .light_overlay + figcaption {
+        color: black; }
+      @media (min-width: 1100px) {
+        main .section_creations .figure_creations img {
+          width: 100%; } }
+  @media (min-width: 1100px) {
+    main .row {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: 1.7fr 1fr; }
+    main .creations_img {
+      grid-column: span 2;
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 1.5rem;
+      margin-top: 3.5rem;
+      margin-bottom: 7rem; } }
+
+/* End of main */
+footer {
+  background: black;
+  margin-top: 4rem;
+  padding: 4em 0 1em 0;
+  /* End of row */ }
+  footer .row {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    text-align: center; }
+    footer .row .logo {
+      margin-bottom: 2.5rem; }
+      @media (min-width: 1100px) {
+        footer .row .logo {
+          margin-bottom: 0; } }
+    footer .row .nav_list .list_item + .list_item {
+      margin-top: 1rem; }
+      @media (min-width: 1100px) {
+        footer .row .nav_list .list_item + .list_item {
+          margin-top: 0;
+          margin-left: 2rem; } }
+    @media (min-width: 1100px) {
+      footer .row .nav_list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; } }
+    footer .row .icons {
+      order: 1;
+      margin: 2.5rem 0 .5rem; }
+      @media (min-width: 1100px) {
+        footer .row .icons {
+          order: 0;
+          margin: 0;
+          justify-self: end; } }
+    footer .row .copyright {
+      order: 2; }
+      @media (min-width: 1100px) {
+        footer .row .copyright {
+          order: 0;
+          justify-self: end; } }
+    @media (min-width: 1100px) {
+      footer .row {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        text-align: left; } }
+  footer .attribution {
+    text-align: center; }
+    @media (min-width: 1100px) {
+      footer .attribution {
+        text-align: left;
+        margin: 2rem 0 0; } }
+
+/*# sourceMappingURL=style.css.map */

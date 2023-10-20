@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap');
+@import './variables';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.9375rem;
+    font-weight: weight('regular');
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    font-family: fontFamily('josefin_sans');
+    font-weight: weight('light');
+}
+
+p, a {
+    font-family: fontFamily('alata');
+    line-height: 1.6
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: fontFamily('josefin_sans');
+    background: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    text-align: center;
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+figcaption {
+    font-family: fontFamily('josefin_sans');
+    font-weight: weight('light');
+}
+
+.container {
+    padding: 0 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @include desktop {
+        width: 85%;
+        max-width: 1440px;
+    }
+}
+
+.logo {
+    width: 150px;
+
+    @include desktop {
+        width: auto;
+    }
+}
+
+.line {
+    border-bottom: 2px solid color('white');
+    padding: .3em 0;
+    transition: .5s;
+    // margin: 1rem auto .5rem;
+}
+
+.desktop_img {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+.mobile_img {
+    @include desktop {
+        display: none;
+    }
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+.heading_h2 {
+    font-size: 2rem;
+
+    @include desktop {
+        font-size: 3rem;
+    }
+}
+
+.white_color {
+    color: color('white');
+}
+
+.black_color {
+    color: color('black');
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.very_dark_gray {
+    color: color('very_dark_gray');
+}
+
+.dark_gray {
+    color: color('dark_gray');
+}
+
+.dark_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: color('black');
+    opacity: .2;
+}
+
+.nav_link:hover {
+    border-bottom: 2px solid color('white');
+}
+
+.attribution {
+    color: color('white');
+    font-size: 0.6875rem;
+}

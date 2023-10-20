@@ -1,0 +1,13 @@
+@import './variables';
+
+@mixin displayLayout($type, $justify-content, $align-items) {
+    display: $type;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin desktop {
+    @media (min-width: $desktop_view) {
+        @content;
+    }
+}
