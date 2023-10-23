@@ -55,4 +55,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Tzienom](https://www.frontendmentor.io/profile/Tzienom)
-- Twitter - [@Tzienom](https://www.twitter.com/Tzienom)
+- Twitter - [@Tzienom](https://www.twitter.com/_tzienom)

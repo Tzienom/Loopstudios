@@ -330,6 +330,14 @@ footer {
     footer .row .icons {
       order: 1;
       margin: 2.5rem 0 .5rem; }
+      footer .row .icons a .sr-only {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden; }
       @media (min-width: 1100px) {
         footer .row .icons {
           order: 0;
