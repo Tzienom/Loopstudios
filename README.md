@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/loopstudios-landing-page-P_Q-F-mF2U](https://www.frontendmentor.io/solutions/loopstudios-landing-page-P_Q-F-mF2U)
 - Live Site URL: [https://tzienom.github.io/Loopstudios/](https://tzienom.github.io/Loopstudios/)
 
 ## My process
