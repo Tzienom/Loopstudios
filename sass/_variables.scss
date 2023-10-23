@@ -16,7 +16,7 @@ $font_weights: (
 );
 
 $desktop_view: 1100px;
-$mobile_view: 700px;
+$mobile_view: 375px;
 
 @function fontFamily($font_name) {
     @return map-get($font_family, $font_name);

@@ -25,7 +25,8 @@ a {
 
 button {
   font-family: "Josefin Sans";
-  background: none; }
+  background: none;
+  cursor: pointer; }
 
 img {
   max-width: 100%; }
@@ -184,11 +185,14 @@ header {
           display: none; } }
   header .header_content {
     border: 2px solid white;
-    padding: 1.5em;
+    padding: 5vw;
     width: 100%; }
     header .header_content .heading_h1 {
       font-size: 2.5rem;
       opacity: 1; }
+      @media (max-width: 375px) {
+        header .header_content .heading_h1 {
+          font-size: 10vw; } }
   @media (min-width: 1100px) {
     header {
       background: url("../images/desktop/image-hero.jpg") center/cover no-repeat;
@@ -210,6 +214,9 @@ main {
         margin-top: 12rem; } }
   main .section_interactive .heading_h2 {
     margin: 2.5rem 0 1rem; }
+    @media (max-width: 375px) {
+      main .section_interactive .heading_h2 {
+        font-size: 9vw; } }
   @media (min-width: 1100px) {
     main .section_interactive .Interactive_content {
       background: white;
@@ -225,6 +232,9 @@ main {
     grid-template-columns: 1fr; }
     main .section_creations .heading_h2 {
       margin-bottom: 3rem; }
+      @media (max-width: 375px) {
+        main .section_creations .heading_h2 {
+          font-size: 9vw; } }
       @media (min-width: 1100px) {
         main .section_creations .heading_h2 {
           margin: 0; } }
@@ -252,6 +262,9 @@ main {
         @media (min-width: 1100px) {
           main .section_creations .figure_creations figcaption {
             margin-top: 400px; } }
+        @media (max-width: 375px) {
+          main .section_creations .figure_creations figcaption {
+            font-size: 7vw; } }
       main .section_creations .figure_creations .light_overlay {
         position: absolute;
         top: 0;

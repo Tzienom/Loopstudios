@@ -21,6 +21,7 @@ h5, h6 {
     font-weight: weight('light');
 }
 
+
 p, a {
     font-family: fontFamily('alata');
     line-height: 1.6
@@ -33,6 +34,7 @@ a {
 button {
     font-family: fontFamily('josefin_sans');
     background: none;
+    cursor: pointer;
 }
 
 img {
